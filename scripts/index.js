@@ -1,0 +1,1 @@
+(function(){$(function(){var a;return a=$(document.body),["github","instagram","twitter","facebook","email"].forEach(function(b){var c,d;return d="#"+b,c="color "+b,a.on("mouseenter",d,function(){return a.addClass(c)}).on("mouseleave",d,function(){return a.removeClass(c)})})})}).call(this);
