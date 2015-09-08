@@ -20,7 +20,7 @@ gulp.task('webpack', function(callback) {
 gulp.task('jade', function() {
   return gulp.src(paths.src + '/views/index.jade')
     .pipe($.plumber())
-    .pipe($.jade())
+    .pipe($.jade({ data: require(paths.src + '/views/data') }))
     .pipe(gulp.dest(paths.dist));
 });
 
@@ -42,8 +42,9 @@ gulp.task('build', ['clean'], function(callback) {
 });
 
 gulp.task('watch', ['build'], function() {
-  gulp.watch(paths.src + '/**/*.{js,styl,css,woff}', ['webpack']);
-  gulp.watch(paths.src + '/**/*.jade', ['jade']);
+  gulp.watch(paths.src + '/scripts/**/*.js', ['webpack']);
+  gulp.watch(paths.src + '/styles/**/*.{styl,css,woff}', ['webpack']);
+  gulp.watch(paths.src + '/views/**/*', ['jade']);
 });
 
 gulp.task('default', ['build']);
