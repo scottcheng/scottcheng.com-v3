@@ -4,16 +4,16 @@ import 'normalize-css';
 import '../styles/index.styl';
 
 $(() => {
-  const $body = $(document.body);
+  const $splash = $('#splash');
   ['github', 'dribbble', 'instagram', 'px', 'twitter', 'email'].forEach((key) => {
-    const selector = `#${key}`;
+    const selector = `.link.${key}`;
     const className = `color ${key}`;
-    $body
+    $splash
       .on('mouseenter', selector, () => {
-        $body.addClass(className);
+        $splash.addClass(className);
       })
       .on('mouseleave', selector, () => {
-        $body.removeClass(className);
+        $splash.removeClass(className);
       });
   });
 });

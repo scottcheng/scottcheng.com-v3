@@ -16,19 +16,21 @@ html
 
   body
 
-    .container
-      #logo
-        include logo
+    #splash
+      .container
+        .logo
+          include logo
 
-      #name Scott Cheng
+        .name Scott Cheng
 
-      #links
-        a#github(href='https://github.com/scottcheng'): .icon.icon-github
-        a#dribbble(href='https://dribbble.com/scottcheng'): .icon.icon-dribbble
-        a#instagram(href='http://instagram.com/scottcheng'): .icon.icon-instagram
-        a#px(href='https://500px.com/ycheng'): .icon.icon-500px
-        a#twitter(href='https://twitter.com/scottcheng'): .icon.icon-twitter
-        a#email(href='mailto:aloha@scottcheng.com'): .icon.icon-send
+        .links
+          a.link.github(href='https://github.com/scottcheng'): .icon.icon-github
+          a.link.dribbble(href='https://dribbble.com/scottcheng'): .icon.icon-dribbble
+          a.link.instagram(href='http://instagram.com/scottcheng'): .icon.icon-instagram
+          a.link.px(href='https://500px.com/ycheng'): .icon.icon-500px
+          a.link.twitter(href='https://twitter.com/scottcheng'): .icon.icon-twitter
+          a.link.email(href='mailto:aloha@scottcheng.com'): .icon.icon-send
+
 
     script.
       (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){

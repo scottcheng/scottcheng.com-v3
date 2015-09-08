@@ -43,7 +43,7 @@ gulp.task('build', ['clean'], function(callback) {
 
 gulp.task('watch', ['build'], function() {
   gulp.watch(paths.src + '/**/*.{js,styl,css,woff}', ['webpack']);
-  gulp.watch(paths.src + '/**/*.{jade}', ['jade']);
+  gulp.watch(paths.src + '/**/*.jade', ['jade']);
 });
 
 gulp.task('default', ['build']);

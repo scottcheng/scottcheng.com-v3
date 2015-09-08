@@ -1,0 +1,101 @@
+#splash
+  size 100%
+  color #000
+  transition color .25s, background .25s
+  &.color
+    color #fff
+    .logo svg path
+      fill #fff
+  &.github
+    background #333
+  &.dribbble
+    background #ea4c89
+  &.instagram
+    background #3f729b
+  &.px
+    background #000
+  &.twitter
+    background #55acee
+  &.email
+    background #db4437
+
+  .logo
+    svg
+      size = 65px
+      size size
+      margin-left -(size / 2)
+      path
+        transition fill .25s
+
+  .name
+    absolute top 50% left
+    line-height 1
+    transform translateY(-50%)
+
+  .links
+    .icon
+      display inline-block
+      &.icon-send
+        transform scale(.85)
+
+  // Size-specific styles
+  // max-width: 399px
+  .container
+    position relative
+    size 100%
+    text-align center
+
+  .logo
+    absolute top 10% left 50%
+
+  .name
+    width 100%
+    text-align center
+    font-size 42px
+
+  .links
+    absolute bottom 10% left 5%
+    width 90%
+    font-size 22px
+    .icon
+      width 16%
+
+  @media screen and (min-width: 400px)
+    .name
+      font-size 45px
+
+    .links
+      font-size 30px
+
+  @media screen and (min-width: 721px)
+    .container
+      min-height 600px
+      text-align left
+      position relative
+      width 60%
+      margin 0 auto
+
+    .logo
+      absolute top 15% left
+      svg
+        size 80px
+        margin-left 0
+
+    .name
+      width auto
+      text-align left
+      font-size 50px
+
+    .links
+      absolute bottom 15% left
+      width auto
+      .icon
+        width 60px
+
+  @media screen and (min-width: 1000px)
+    .name
+      font-size 80px
+
+    .links
+      .icon
+        width 80px
