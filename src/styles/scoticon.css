@@ -1,10 +1,6 @@
 @font-face {
 	font-family: 'scoticon';
-	src:url('fonts/scoticon.eot?kopq2q');
-	src:url('fonts/scoticon.eot?#iefixkopq2q') format('embedded-opentype'),
-		url('fonts/scoticon.ttf?kopq2q') format('truetype'),
-		url('fonts/scoticon.woff?kopq2q') format('woff'),
-		url('fonts/scoticon.svg?kopq2q#scoticon') format('svg');
+	src: url('fonts/scoticon.woff') format('woff');
 	font-weight: normal;
 	font-style: normal;
 }
