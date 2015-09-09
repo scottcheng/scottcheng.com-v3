@@ -1,105 +1,47 @@
 @import './variables'
 
 #splash
-  size 100%
-  min-height 320px
-  color #000
-  transition color .25s, background .25s
-  &.color
-    color #fff
-    .logo svg path
-      fill #fff
-  &.github
-    background #333
-  &.dribbble
-    background #ea4c89
-  &.instagram
-    background #3f729b
-  &.px
-    background #000
-  &.twitter
-    background #55acee
-  &.email
-    background #db4437
-
-  .container
-    position relative
-
-  .logo
-    svg
-      size font-size-xl
-      transform translateX(-50%)
-      path
-        transition fill .25s
-        fill #000
-
-  .name
-    absolute top 50% left
-    line-height 1
-    transform translateY(-50%)
-
   .links
     .icon
       display inline-block
+      transition color .25s
       &.icon-send
         transform scale(.85)
+      &.github:hover
+        color #333
+      &.dribbble:hover
+        color #ea4c89
+      &.instagram:hover
+        color #3f729b
+      &.px:hover
+        color #000
+      &.twitter:hover
+        color #55acee
+      &.email:hover
+        color #db4437
 
   // Size-specific styles
   // max-width: 399px
-  .container
-    height 100%
-    text-align center
+  padding margin-xl 0
 
-  .logo
-    absolute top 10% left 50%
+  .about, .links
+    margin-top margin-xl
 
   .name
-    width 100%
-    text-align center
     font-size font-size-lg
 
   .links
-    absolute bottom 10% left 5%
-    width 90%
-    font-size font-size-md
+    font-size font-size-ms
     .icon
-      width 16%
+      width 40px
 
-  @media screen and (min-width: 450px)
-    .logo
-      svg
-        size font-size-xxl
+  @media screen and (min-width: 721px)
+    padding margin-xxl 0
+
     .name
       font-size font-size-xl
 
     .links
-      font-size font-size-ml
-
-  @media screen and (min-width: 721px)
-    min-height 600px
-
-    .container
-      text-align left
-
-    .logo
-      absolute top 15% left
-      svg
-        transform translateX(0)
-
-    .name
-      width auto
-      text-align left
-
-    .links
-      absolute bottom 15% left
-      width auto
+      font-size font-size-md
       .icon
         width 60px
-
-  @media screen and (min-width: 1000px)
-    .name
-      font-size font-size-xxl
-
-    .links
-      .icon
-        width 80px

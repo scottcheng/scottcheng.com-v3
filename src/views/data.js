@@ -77,12 +77,12 @@ var projects = [
 });
 
 var links = [
-  { class: 'github', link: 'https://github.com/scottcheng', icon: 'github' },
-  { class: 'dribbble', link: 'https://dribbble.com/scottcheng', icon: 'dribbble' },
-  { class: 'instagram', link: 'http://instagram.com/scottcheng', icon: 'instagram' },
-  { class: 'px', link: 'https://500px.com/ycheng', icon: '500px' },
-  { class: 'twitter', link: 'https://twitter.com/scottcheng', icon: 'twitter' },
-  { class: 'email', link: 'mailto:aloha@scottcheng.com', icon: 'send' },
+  { id: 'github', link: 'https://github.com/scottcheng', icon: 'github' },
+  { id: 'dribbble', link: 'https://dribbble.com/scottcheng', icon: 'dribbble' },
+  { id: 'instagram', link: 'http://instagram.com/scottcheng', icon: 'instagram' },
+  { id: 'px', link: 'https://500px.com/ycheng', icon: '500px' },
+  { id: 'twitter', link: 'https://twitter.com/scottcheng', icon: 'twitter' },
+  { id: 'email', link: 'mailto:aloha@scottcheng.com', icon: 'send' },
 ];
 
 module.exports = {

@@ -18,14 +18,13 @@ html
 
     #splash
       .container
-        .logo
-          include logo
-
         .name Scott Cheng
+
+        .about I make things, usually in the intersection of technology and design.
 
         .links
           each l in links
-            a.link(class=l.id href=l.link): .icon(class='icon-#{l.icon}')
+            a.link(class=l.id href=l.link): .icon(class='icon-#{l.icon} #{l.id}')
 
     #projects
       include projects
