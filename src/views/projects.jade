@@ -1,25 +1,24 @@
-#projects
-  each p in projects
-    .project(class=p.id)
-      .container
-        .text
-          .type= p.type
-          .name
-            a(href=p.link)= p.name
-          .description!= p.description
-          .link
-            a(href=p.link)
-              | #{p.linkText}
-              span.icon.icon-chevron-right
-        .image
-          if p.browser
-            .browser
-              .browser-header
-                .dots
-                  .dot
-                  .dot
-                  .dot
-              .browser-window
-                img.in-browser(src='/assets/projects/#{p.id}.png')
-          else
-            img.no-browser(src='/assets/projects/#{p.id}.png')
+each p in projects
+  .project(class=p.id)
+    .container
+      .text
+        .type= p.type
+        .name
+          a(href=p.link)= p.name
+        .description!= p.description
+        .link
+          a(href=p.link)
+            | #{p.linkText}
+            span.icon.icon-chevron-right
+      .image
+        if p.browser
+          .browser
+            .browser-header
+              .dots
+                .dot
+                .dot
+                .dot
+            .browser-window
+              img.in-browser(src='/assets/projects/#{p.id}.png')
+        else
+          img.no-browser(src='/assets/projects/#{p.id}.png')
