@@ -1,5 +1,12 @@
 #projects
   each p in projects
     .project
-      .name= p.name
-      .description!= p.description
+      .container
+        .type= p.type
+        .name
+          a(href=p.link)= p.name
+        .description!= p.description
+        .link
+          a(href=p.link)
+            | #{p.linkText}
+            span.icon.icon-chevron-right

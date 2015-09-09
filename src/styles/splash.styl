@@ -1,5 +1,6 @@
 #splash
   size 100%
+  min-height 320px
   color #000
   transition color .25s, background .25s
   &.color
@@ -21,9 +22,8 @@
 
   .logo
     svg
-      size = 65px
-      size size
-      margin-left -(size / 2)
+      size font-size-xl
+      transform translateX(-50%)
       path
         transition fill .25s
 
@@ -41,9 +41,7 @@
   // Size-specific styles
   // max-width: 399px
   .container
-    position relative
-    size 100%
-    text-align center
+    height 100%
 
   .logo
     absolute top 10% left 50%
@@ -51,40 +49,36 @@
   .name
     width 100%
     text-align center
-    font-size 42px
+    font-size font-size-lg
 
   .links
     absolute bottom 10% left 5%
     width 90%
-    font-size 22px
+    font-size font-size-md
     .icon
       width 16%
 
-  @media screen and (min-width: 400px)
+  @media screen and (min-width: 450px)
+    .logo
+      svg
+        size font-size-xxl
     .name
-      font-size 45px
+      font-size font-size-xl
 
     .links
-      font-size 30px
+      font-size font-size-ml
 
   @media screen and (min-width: 721px)
-    .container
-      min-height 600px
-      text-align left
-      position relative
-      width 60%
-      margin 0 auto
+    min-height 600px
 
     .logo
       absolute top 15% left
       svg
-        size 80px
-        margin-left 0
+        transform translateX(0)
 
     .name
       width auto
       text-align left
-      font-size 50px
 
     .links
       absolute bottom 15% left
@@ -94,7 +88,7 @@
 
   @media screen and (min-width: 1000px)
     .name
-      font-size 80px
+      font-size font-size-xxl
 
     .links
       .icon
