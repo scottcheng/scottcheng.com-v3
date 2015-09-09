@@ -1,25 +1,16 @@
-.project
-  project-padding = margin-xxl
-  borwser-header-height = 40px
+@import './variables'
 
-  padding project-padding 0
+.project
   position relative
-  overflow hidden
 
   .type
-    font-size font-size-sm
     text-transform uppercase
     color gray
 
   .name
-    margin margin-lg 0
-    font-size font-size-ml
     font-weight 500
     a
       text-decoration none
-
-  .description
-    font-size font-size-ms
 
   .link
     a
@@ -27,22 +18,17 @@
       font-style italic
       .icon
         margin-left margin-sm
-        font-size font-size-xs
+        font-size 60%
 
   .browser
-    dot-size = 14px
-    browser-border-radius = dot-size / 2
+    browser-border-radius = 5px
     .browser-header
-      height borwser-header-height
       border-radius browser-border-radius browser-border-radius 0 0
       border-bottom 1px solid gray-lighter
       background gray-bg
       position relative
       .dots
-        absolute top 50% left ((borwser-header-height - dot-size) / 2)
-        margin-top -(dot-size / 2)
         .dot
-          size dot-size
           border-radius 50%
           background gray-lighter
           float left
@@ -61,33 +47,73 @@
       border-top none
       img.in-browser
         width 100%
+        margin-bottom -(browser-border-radius)
+
+  browser-header(header-height, dot-size)
+    .browser-header
+      height header-height
+      .dots
+        absolute top 50% left ((header-height - dot-size) / 2)
+        margin-top -(dot-size / 2)
+        .dot
+          size dot-size
+
+  // Size-specific styles
+  // max-width: 720px
+  margin-top margin-xl
+  .type
+    font-size font-size-xs
+  .name
+    margin margin-md 0
+    font-size font-size-md
+  .browser, img.no-browser
+    width 100%
+    margin-top margin-md
+  browser-header(20px, 6px)
+
+  @media screen and (min-width: 721px)
+    margin-top margin-xxl
+    browser-header(30px, 9px)
+
+    .type
+      font-size font-size-sm
+    .name
+      font-size font-size-ml
 
   @media screen and (min-width: 1000px)
+    project-padding = margin-xxl
     image-width = 800px
+
+    project-height(image-height)
+      min-height image-height + 1px + project-padding
+
+    padding project-padding 0
     .container
       min-height 400px
 
-    imageHeight(h)
-      min-height h + 1px + project-padding
-      .browser-window
-        height h + 1px
-
-    imageHeight(600px)
+    project-height(600px)
 
     .type, .name, .description, .link
       width 45%
 
+    .name
+      margin margin-lg 0
+
     .image
       absolute top project-padding left 50%
+
+    borwser-header-height = 40px
     .browser
       margin-top -(borwser-header-height)
       width image-width + 2px
+    browser-header(borwser-header-height, 12px)
+
     img.no-browser
       width image-width
 
     &.conversive
-      imageHeight(420px)
+      project-height(420px)
     &.cofound
-      imageHeight(395px)
+      project-height(395px)
     &.weibo
-      imageHeight(445px)
+      project-height(445px)

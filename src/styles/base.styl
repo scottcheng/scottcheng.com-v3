@@ -1,3 +1,5 @@
+@import './variables'
+
 *, *:before, *:after
   box-sizing border-box
 
@@ -22,8 +24,10 @@ body
   min-width 320px
   position relative
   font-family Ratio, sans-serif
-  font-size font-size-ms
+  font-size font-size-sm
   color gray-dark
+  @media screen and (min-width: 721px)
+    font-size font-size-ms
 
 p
   line-height 1.5
@@ -33,11 +37,9 @@ p
   width 100%
   padding-left margin-md
   padding-right margin-md
-  text-align center
 
 @media screen and (min-width: 721px)
   .container
-    text-align left
     width 80%
     margin 0 auto
     padding-left 0

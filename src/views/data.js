@@ -58,7 +58,7 @@ var projects = (function() {
   {
     id: 'd3-101',
     name: 'D3.js 101',
-    description: 'A technical intro to D3.js.',
+    description: 'A technical intro to D3.js visualization library.',
     link: 'http://scottcheng.github.io/d3js-101/',
     linkText: 'See slides',
     type: 'Talk',
