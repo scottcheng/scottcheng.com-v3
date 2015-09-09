@@ -24,9 +24,16 @@ gulp.task('jade', function() {
     .pipe(gulp.dest(paths.dist));
 });
 
+gulp.task('copy:images', function() {
+  return gulp.src(paths.src + '/assets/**/*.{jpg,jpeg,png,gif}', { base: paths.src })
+    .pipe($.imagemin())
+    .pipe(gulp.dest(paths.dist));
+});
+
 gulp.task('copy:assets', function() {
   return gulp.src([
     paths.src + '/assets/**/*',
+    '!' + paths.src + '/assets/**/*.{jpg,jpeg,png,gif}',
     paths.src + '/CNAME',
     paths.src + '/favicon.ico',
   ], { base: paths.src })
@@ -38,7 +45,7 @@ gulp.task('clean', function() {
 });
 
 gulp.task('build', ['clean'], function(callback) {
-  run(['jade', 'webpack', 'copy:assets'], callback);
+  run(['jade', 'webpack', 'copy:images', 'copy:assets'], callback);
 });
 
 gulp.task('watch', ['build'], function() {
