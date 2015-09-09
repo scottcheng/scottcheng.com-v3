@@ -22,3 +22,5 @@ each p in projects
               img.in-browser(src='/assets/projects/#{p.id}.png')
         else
           img.no-browser(src='/assets/projects/#{p.id}.png')
+    .image-fullscreen
+      img(src='/assets/projects/#{p.id}.png')

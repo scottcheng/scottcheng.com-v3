@@ -58,6 +58,11 @@
         .dot
           size dot-size
 
+  .image-fullscreen
+    display none
+    size 0
+    fixed top -10000px left -10000px
+
   // Size-specific styles
   // max-width: 720px
   margin-top margin-xl
@@ -101,6 +106,7 @@
 
     .image
       absolute top project-padding left 50%
+      cursor pointer
 
     borwser-header-height = 40px
     .browser
@@ -117,3 +123,14 @@
       project-height(395px)
     &.weibo
       project-height(445px)
+
+    .image-fullscreen
+      z-index 1000
+      background rgba(#fff, .9)
+      fixed top left
+      size 100%
+      cursor pointer
+      img
+        width image-width
+        absolute top 50% left 50%
+        transform translate(-50%, -50%)
