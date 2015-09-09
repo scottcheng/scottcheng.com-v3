@@ -1,27 +1,93 @@
-#projects
-  .project
-    border-top 1px solid gray-lighter
-    padding 100px 0
+.project
+  project-padding = margin-xl
+  borwser-header-height = 40px
 
-    .type
-      font-size font-size-sm
-      text-transform uppercase
-      color gray
+  padding project-padding 0
+  position relative
+  overflow hidden
 
-    .name
-      margin margin-lg 0
-      font-size font-size-ml
-      font-weight 500
-      a
-        text-decoration none
+  .type
+    font-size font-size-sm
+    text-transform uppercase
+    color gray
 
-    .description
-      font-size font-size-ms
+  .name
+    margin margin-lg 0
+    font-size font-size-ml
+    font-weight 500
+    a
+      text-decoration none
 
-    .link
-      a
-        text-decoration none
-        font-style italic
-        .icon
-          margin-left margin-sm
-          font-size font-size-xs
+  .description
+    font-size font-size-ms
+
+  .link
+    a
+      text-decoration none
+      font-style italic
+      .icon
+        margin-left margin-sm
+        font-size font-size-xs
+
+  .browser
+    dot-size = 14px
+    browser-border-radius = dot-size / 2
+    .browser-header
+      height borwser-header-height
+      border-radius browser-border-radius browser-border-radius 0 0
+      border-bottom 1px solid gray-lighter
+      background gray-bg
+      position relative
+      .dots
+        absolute top 50% left ((borwser-header-height - dot-size) / 2)
+        margin-top -(dot-size / 2)
+        .dot
+          size dot-size
+          border-radius 50%
+          background gray-lighter
+          float left
+          margin-right 5px
+          &:nth-child(1)
+            background red-lighter
+          &:nth-child(2)
+            background yellow-lighter
+          &:nth-child(3)
+            background green-lighter
+    .browser-window
+      background #fff
+      border-radius 0 0 browser-border-radius browser-border-radius
+      overflow hidden
+      border 1px solid gray-bg
+      border-top none
+      img.in-browser
+        width 100%
+
+  @media screen and (min-width: 1000px)
+    image-width = 800px
+    .container
+      min-height 400px
+
+    imageHeight(h)
+      min-height borwser-header-height + h + 1px + project-padding
+      .browser-window
+        height h + 1px
+
+    imageHeight(600px)
+
+    .type, .name, .description, .link
+      width 45%
+
+    .image
+      absolute top project-padding left 50%
+    .browser
+      margin-top -(borwser-header-height)
+      width image-width + 2px
+    img.no-browser
+      width image-width
+
+    &.conversive
+      imageHeight(420px)
+    &.cofound
+      imageHeight(395px)
+    &.weibo
+      imageHeight(445px)

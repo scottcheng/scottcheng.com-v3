@@ -37,6 +37,7 @@ var projects = (function() {
     link: 'https://co-found.herokuapp.com/',
     linkText: 'Launch app',
     type: 'Mobile web app',
+    browser: false,
   },
   {
     id: 'weibo',
@@ -55,7 +56,7 @@ var projects = (function() {
     type: 'Visualization',
   },
   {
-    id: 'd3101',
+    id: 'd3-101',
     name: 'D3.js 101',
     description: 'A technical intro to D3.js.',
     link: 'http://scottcheng.github.io/d3js-101/',
@@ -72,6 +73,7 @@ var projects = (function() {
   },
   ].map(function(p) {
     p.description = marked(p.description);
+    if (p.browser == null) { p.browser = true; }
     return p;
   });
 })();
