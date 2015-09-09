@@ -1,7 +1,6 @@
 var marked = require('marked');
 
-var projects = (function() {
-  return [
+var projects = [
   {
     id: 'sparkl',
     name: 'Sparkl',
@@ -71,13 +70,22 @@ var projects = (function() {
     linkText: 'See slides',
     type: 'Talk',
   },
-  ].map(function(p) {
-    p.description = marked(p.description);
-    if (p.browser == null) { p.browser = true; }
-    return p;
-  });
-})();
+].map(function(p) {
+  p.description = marked(p.description);
+  if (p.browser == null) { p.browser = true; }
+  return p;
+});
+
+var links = [
+  { class: 'github', link: 'https://github.com/scottcheng', icon: 'github' },
+  { class: 'dribbble', link: 'https://dribbble.com/scottcheng', icon: 'dribbble' },
+  { class: 'instagram', link: 'http://instagram.com/scottcheng', icon: 'instagram' },
+  { class: 'px', link: 'https://500px.com/ycheng', icon: '500px' },
+  { class: 'twitter', link: 'https://twitter.com/scottcheng', icon: 'twitter' },
+  { class: 'email', link: 'mailto:aloha@scottcheng.com', icon: 'send' },
+];
 
 module.exports = {
   projects: projects,
+  links: links,
 };
