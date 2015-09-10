@@ -22,6 +22,9 @@
 .icon-500px:before {
   content: "\e600";
 }
+.icon-heart:before {
+  content: "\f004";
+}
 .icon-chevron-right:before {
   content: "\f054";
 }
