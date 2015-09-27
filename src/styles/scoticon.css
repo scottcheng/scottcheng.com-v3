@@ -19,6 +19,9 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
+.icon-sc-circle:before {
+  content: "\e601";
+}
 .icon-500px:before {
   content: "\e600";
 }
