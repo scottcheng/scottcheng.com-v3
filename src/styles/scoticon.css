@@ -19,33 +19,42 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
-.icon-sc-circle:before {
-  content: "\e601";
-}
 .icon-500px:before {
-  content: "\e600";
+    content: "\eaab";
 }
-.icon-heart:before {
-  content: "\f004";
+.icon-sc-circle:before {
+    content: "\e901";
 }
 .icon-chevron-right:before {
-  content: "\f054";
+    content: "\e902";
+}
+.icon-chevron-small-right:before {
+    content: "\e903";
+}
+.icon-heart:before {
+    content: "\e904";
+}
+.icon-spotify:before {
+    content: "\e900";
 }
 .icon-facebook:before {
-  content: "\f082";
+    content: "\f082";
 }
 .icon-twitter:before {
-  content: "\f099";
+    content: "\f099";
 }
 .icon-github:before {
-  content: "\f09b";
+    content: "\f09b";
+}
+.icon-envelope:before {
+    content: "\f0e0";
 }
 .icon-instagram:before {
-  content: "\f16d";
+    content: "\f16d";
 }
 .icon-dribbble:before {
-  content: "\f17d";
+    content: "\f17d";
 }
 .icon-send:before {
-  content: "\f1d8";
+    content: "\f1d8";
 }

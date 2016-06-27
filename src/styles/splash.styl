@@ -2,11 +2,12 @@
 
 #splash
   .links
-    .icon
-      display inline-block
+    .link
       transition color .25s
-      &.icon-send
-        transform scale(.85)
+      &.px
+        font-size .9em
+      &.email
+        font-size .85em
       &.github:hover
         color #333
       &.dribbble:hover
@@ -15,10 +16,14 @@
         color #3f729b
       &.px:hover
         color #000
+      &.spotify:hover
+        color #2ebd59
       &.twitter:hover
         color #55acee
       &.email:hover
         color #db4437
+      .icon
+        display inline-block
 
   // Size-specific styles
   // max-width: 399px

@@ -81,6 +81,7 @@ var links = [
   { id: 'dribbble', link: 'https://dribbble.com/scottcheng', icon: 'dribbble' },
   { id: 'instagram', link: 'http://instagram.com/scottcheng', icon: 'instagram' },
   { id: 'px', link: 'https://500px.com/ycheng', icon: '500px' },
+  { id: 'spotify', link: 'https://open.spotify.com/user/1241319820', icon: 'spotify' },
   { id: 'twitter', link: 'https://twitter.com/scottcheng', icon: 'twitter' },
   { id: 'email', link: 'mailto:aloha@scottcheng.com', icon: 'send' },
 ];

@@ -28,7 +28,7 @@ module.exports = {
       {
         test: /\.(eot|svg|ttf|woff)$/,
         loader: 'url?limit=100000',
-      }
+      },
     ],
   },
 
