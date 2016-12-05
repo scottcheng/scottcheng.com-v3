@@ -62,14 +62,6 @@ var projects = [
     linkText: 'See slides',
     type: 'Talk',
   },
-  {
-    id: 'css3',
-    name: 'The Revolutionary CSS3',
-    description: 'A non-technical intro to CSS level 3.',
-    link: 'http://scottcheng.github.io/revolutionary-css3/',
-    linkText: 'See slides',
-    type: 'Talk',
-  },
 ].map(function(p) {
   p.description = marked(p.description);
   if (p.browser == null) { p.browser = true; }
