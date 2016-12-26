@@ -2,6 +2,14 @@ var marked = require('marked');
 
 var projects = [
   {
+    id: 'o',
+    name: "and it's just another day",
+    description: 'An animated generative artwork about time and the universe.',
+    link: 'http://scottcheng.github.io/o/',
+    linkText: 'Watch',
+    type: 'Art',
+  },
+  {
     id: 'sparkl',
     name: 'Sparkl',
     description: 'Virtual brainstorming for creative collaboration.',
