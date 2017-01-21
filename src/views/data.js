@@ -5,7 +5,7 @@ var projects = [
     id: 'o',
     name: "and it's just another day",
     description: 'An animated generative artwork about time and the universe.',
-    link: 'http://scottcheng.github.io/o/',
+    link: 'http://anditsjustanotherday.com/',
     linkText: 'Watch',
     type: 'Art',
   },
