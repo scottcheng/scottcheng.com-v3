@@ -2,6 +2,14 @@ var marked = require('marked');
 
 var projects = [
   {
+    id: 'with-all-my-love-for-this-world',
+    name: 'With All My Love For This World',
+    description: 'The world through my eyes.',
+    link: 'http://withallmyloveforthisworld.com/',
+    linkText: 'See',
+    type: 'Photography',
+  },
+  {
     id: 'o',
     name: "and it's just another day",
     description: 'An animated generative artwork about time and the universe.',
