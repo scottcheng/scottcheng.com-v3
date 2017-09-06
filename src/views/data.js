@@ -4,7 +4,7 @@ var projects = [
   {
     id: 'with-all-my-love-for-this-world',
     name: 'With All My Love For This World',
-    description: 'The world through my eyes.',
+    description: 'A landscape photo collection.',
     link: 'http://withallmyloveforthisworld.com/',
     linkText: 'See',
     type: 'Photography',
