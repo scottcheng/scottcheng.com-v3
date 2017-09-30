@@ -21,7 +21,7 @@ var projects = [
     id: 'sparkl',
     name: 'Sparkl',
     description: 'Virtual brainstorming for creative collaboration.',
-    link: 'https://sparkl.us',
+    link: 'http://sparkl.us',
     linkText: 'Launch site',
     type: 'Web app',
   },
