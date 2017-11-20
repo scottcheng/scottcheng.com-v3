@@ -2,6 +2,18 @@ var marked = require('marked');
 
 var projects = [
   {
+    id: 'si',
+    name: 'Si',
+    description:
+      'An online board game based on [Score Four](https://en.wikipedia.org/wiki/Score_Four), '
+      + 'or 3D Connect Four. '
+      + 'Written in [Reason](https://reasonml.github.io/) and open sourced on '
+      + '[GitHub](https://github.com/scottcheng/si-reason).',
+    link: 'https://scottcheng.github.io/si-reason/',
+    linkText: 'Play',
+    type: 'Game'
+  },
+  {
     id: 'with-all-my-love-for-this-world',
     name: 'With All My Love For This World',
     description: 'A landscape photo collection.',
