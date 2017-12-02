@@ -2,6 +2,14 @@ var marked = require("marked");
 
 var projects = [
   {
+    id: "with-all-my-love-for-this-world",
+    name: "with all my love for this world",
+    description: "A set of photo collections.",
+    link: "http://withallmyloveforthisworld.com/",
+    linkText: "See",
+    type: "Photography",
+  },
+  {
     id: "si",
     name: "Si",
     description:
@@ -12,14 +20,6 @@ var projects = [
     link: "https://scottcheng.github.io/si-reason/",
     linkText: "Play",
     type: "Game",
-  },
-  {
-    id: "with-all-my-love-for-this-world",
-    name: "With All My Love For This World",
-    description: "My photo collections.",
-    link: "http://withallmyloveforthisworld.com/",
-    linkText: "See",
-    type: "Photography",
   },
   {
     id: "o",
