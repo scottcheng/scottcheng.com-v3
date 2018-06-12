@@ -56,17 +56,6 @@ var projects = [
     type: "Academic / web prototype",
   },
   {
-    id: "cofound",
-    name: "Co.found",
-    description:
-      "Cofounder networking platform for the Stanford community. " +
-      "Class project for [CS147](http://hci.stanford.edu/cs147/).",
-    link: "https://co-found.herokuapp.com/",
-    linkText: "Launch app",
-    type: "Mobile web app",
-    browser: false,
-  },
-  {
     id: "weibo",
     name: "Weibo Visualization",
     description:
