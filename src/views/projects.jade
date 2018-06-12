@@ -6,21 +6,16 @@ each p in projects
         .name
           a(href=p.link)= p.name
         .description!= p.description
-        .link
-          a(href=p.link)
-            | #{p.linkText}
-            span.icon.icon-chevron-right
       .image
-        if p.browser
-          .browser
-            .browser-header
-              .dots
-                .dot
-                .dot
-                .dot
-            .browser-window
-              img.in-browser(src='/assets/projects/#{p.id}.png')
-        else
-          img.no-browser(src='/assets/projects/#{p.id}.png')
-        .image-fullscreen
-          img(src='/assets/projects/#{p.id}.png')
+        a(href=p.link)
+          if p.browser
+            .browser
+              .browser-header
+                .dots
+                  .dot
+                  .dot
+                  .dot
+              .browser-window
+                img.in-browser(src='/assets/projects/#{p.id}.png')
+          else
+            img.no-browser(src='/assets/projects/#{p.id}.png')
